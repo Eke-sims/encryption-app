@@ -1,0 +1,40 @@
+.function-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 0.5rem;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0.5rem;
+}
+
+textarea{
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    outline: none;
+}
+
+button{
+    background-color: black;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    flex: 1;
+    overflow:scroll;
+}
