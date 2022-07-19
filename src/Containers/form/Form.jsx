@@ -10,11 +10,11 @@ const Form = () => {
 
     const encryptText = (text) =>{
         const newArray = text.cipherText.split('');
-        // Performing ASCII manipulation
+        // Performing ASCII value manipulation
         const manArray = newArray.map(letter => letter.charCodeAt(0) + 4);
-
+        // Coverting from Ascii value back to char in an array
         const cipherArray = manArray.map(array => String.fromCharCode(array));
-
+        // Coverting from an array back to a string
         const cipherText = cipherArray.join('');
         
         setOutput(cipherText);

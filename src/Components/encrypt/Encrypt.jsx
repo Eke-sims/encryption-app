@@ -27,7 +27,10 @@ const Encrypt = ({ onAdd, output }) => {
             value={cipherText} 
             onChange={(e)=> setCipherText(e.target.value)}/>
         <button >Encrypt</button>
-        <p className='output'> Cipher Text: Xli$uymgo$js|$nyqtih$sziv$xli$ps$jirgi$erh$perhih$sr$mx+w$xemp {output}</p>
+        <div className='output-container'>
+          <h3>Cipher Text:</h3>
+          <p className='output'>{output}</p>
+        </div>
     </form>
   )
 }
