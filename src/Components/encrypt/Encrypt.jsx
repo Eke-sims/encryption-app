@@ -1,22 +1,21 @@
-import React from 'react'
 import './encrypt.css'
 import {useState} from 'react'
 
-const Encrypt = ({ onAdd, output }) => {
+const Encrypt = ({ onAdd, cipherTextOutput }) => {
 
-  const [cipherText, setCipherText] = useState('')
+  const [plainTextInput, setPlainTextInput] = useState('')
 
   const onSubmit = (e) => {
     e.preventDefault();
 
-    if( !cipherText ) {
+    if( !plainTextInput ) {
       alert('Please enter a text');
       return
     }
 
-    onAdd({cipherText});
+    onAdd({plainTextInput});
 
-    setCipherText('');
+    setPlainTextInput('');
 
   }
 
@@ -24,12 +23,12 @@ const Encrypt = ({ onAdd, output }) => {
     <form className='function-container' onSubmit={onSubmit}>
         <label htmlFor="input">Text</label>
         <textarea type="text"  
-            value={cipherText} 
-            onChange={(e)=> setCipherText(e.target.value)}/>
+          value={plainTextInput} 
+          onChange={(e)=> setPlainTextInput(e.target.value)}/>
         <button >Encrypt</button>
         <div className='output-container'>
           <h3>Cipher Text:</h3>
-          <p className='output'>{output}</p>
+          <p className='output'>{cipherTextOutput}</p>
         </div>
     </form>
   )
