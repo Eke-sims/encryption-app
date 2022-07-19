@@ -1,4 +1,3 @@
-import './encrypt.css'
 import {useState} from 'react'
 
 const Encrypt = ({ onAdd, cipherTextOutput }) => {
@@ -21,8 +20,9 @@ const Encrypt = ({ onAdd, cipherTextOutput }) => {
 
   return (
     <form className='function-container' onSubmit={onSubmit}>
-        <label htmlFor="input">Text</label>
+        <label htmlFor="input">Plain Text</label>
         <textarea type="text"  
+          placeholder='Input Plain-text'
           value={plainTextInput} 
           onChange={(e)=> setPlainTextInput(e.target.value)}/>
         <button >Encrypt</button>

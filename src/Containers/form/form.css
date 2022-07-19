@@ -1,19 +1,23 @@
 .form-container{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
     border: 2px solid black;
     border-radius: 10px;
-    height: 500px;
     display: flex;
     flex-direction: column;
+    height: 500px;
     padding: 2rem;
     width: 400px;
+}
+
+.form-title{
+    text-align: center;
 }
 
 .function-container{
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5rem;
     height: 250px;
+    margin-bottom: 0.5rem;
 }
 
 label{
@@ -24,12 +28,14 @@ label{
 }
 
 textarea{
+    background: transparent;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 500;
     height: 4rem;
     margin-bottom: 0.5rem;
     outline: none;
+    padding: 5px;
 }
 
 button{
@@ -44,13 +50,13 @@ button{
 
 .output-container{
     display: flex;
+    flex: 1; 
     flex-direction: column;
-    flex: 1;
-    padding: 4px 0 0 4px;
+    padding: 4px 0 4px 0;
 }
 
 p{
     font-size: 12px;
     line-height: 14px;
-    overflow: auto;
+    word-break: break-all;
 }

@@ -22,10 +22,11 @@ const Decrypt = ({onAdd, plainTextOutput}) => {
 
   return (
     <form className='function-container' onSubmit={onSubmit}>
-      <label htmlFor="input">Text</label>
+      <label htmlFor="input">Cipher Text</label>
       <textarea type="text"  
-          value={cipherTextInput} 
-          onChange={(e)=> setCipherTextInput(e.target.value)}/>
+        placeholder='Input Cipher Text'
+        value={cipherTextInput} 
+        onChange={(e)=> setCipherTextInput(e.target.value)}/>
       <button className='decrypt'>Decrypt</button>
       <div className='output-container'>
           <h3>Plain Text:</h3>

@@ -38,6 +38,7 @@ const Form = () => {
 
     return (
         <div className='form-container'>
+            <h2 className='form-title'> Ceasar's Cipher App </h2>
             <Encrypt onAdd={encryptText} cipherTextOutput={cipherTextOutput} />
             <Decrypt onAdd={decryptText} plainTextOutput={plainTextOutput} />
         </div>
