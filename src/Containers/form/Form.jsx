@@ -12,7 +12,7 @@ const Form = () => {
     const encryptText = (text) =>{
         const newArray = text.plainTextInput.split('');
         // Performing ASCII value manipulation
-        const manArray = newArray.map(letter => letter.charCodeAt(0) + 4);
+        const manArray = newArray.map(letter => letter.charCodeAt(0) + 13);
         // Coverting from Ascii value back to char in an array
         const cipherArray = manArray.map(array => String.fromCharCode(array));
         // Coverting from an array back to a string
@@ -26,7 +26,7 @@ const Form = () => {
     const decryptText = (text) =>{
         const newArray = text.cipherTextInput.split('');
         // Performing ASCII value manipulation
-        const manArray = newArray.map(letter => letter.charCodeAt(0) - 4);
+        const manArray = newArray.map(letter => letter.charCodeAt(0) - 13);
         // Coverting from Ascii value back to char in an array
         const plainArray = manArray.map(array => String.fromCharCode(array));
         // Coverting from an array back to a string
@@ -38,7 +38,7 @@ const Form = () => {
 
     return (
         <div className='form-container'>
-            <h2 className='form-title'> Ceasar's Cipher App </h2>
+            <h2 className='form-title'> Ceasar's Cipher App <br />ROT13🔗</h2>
             <Encrypt onAdd={encryptText} cipherTextOutput={cipherTextOutput} />
             <Decrypt onAdd={decryptText} plainTextOutput={plainTextOutput} />
         </div>

@@ -5,8 +5,8 @@
 }
 
 .App{
-  background-color: #ccc;
-  background-image: url(../src/Assets/pexels-uzunov-rostislav-5011647.jpg);
+  background-color: green;
+  /* background-image: url(../src/Assets/pexels-uzunov-rostislav-5011647.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
